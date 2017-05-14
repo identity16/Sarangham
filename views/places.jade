@@ -1,0 +1,11 @@
+//
+   Created by swj on 2017. 5. 14..
+extends layout
+
+
+block content
+    h1= title
+
+    each place in places
+        p
+            a(href='/places/#{place._id}/lockers')= place._id + '층'

@@ -1,0 +1,15 @@
+//
+   Created by swj on 2017. 5. 5..
+
+extends layout
+
+block scripts
+
+
+block content
+    h1= title + ' at ' + place_id + '층'
+    each locker in lockers
+        div(class='locker')
+            ul
+                each v, k in locker
+                    li= k + ': ' + v
